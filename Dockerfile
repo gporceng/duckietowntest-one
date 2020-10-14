@@ -1,7 +1,7 @@
 # parameters
-ARG REPO_NAME="CSCE274-base"
+ARG REPO_NAME="duckietowntest-one"
 ARG DESCRIPTION="Base class repo for sc CSCE 274"
-ARG MAINTAINER="Ioannis Rekleitis (yiannisr@cse.sc.edu)"
+ARG MAINTAINER="Gregory Porceng (gporceng@cse.sc.edu)"
 # pick an icon from: https://fontawesome.com/v4.7.0/icons/
 ARG ICON="cube"
 
@@ -80,5 +80,6 @@ LABEL org.duckietown.label.module.type="${REPO_NAME}" \
     org.duckietown.label.base.image="${BASE_IMAGE}" \
     org.duckietown.label.base.tag="${BASE_TAG}" \
     org.duckietown.label.maintainer="${MAINTAINER}"
+ENTRYPOINT /bin/bash
 # <== Do not change the code above this line
 # <==================================================
